@@ -1,11 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 
-url_base = 'https://lista.mercadolivre.com.br/miband5'
+url_base = 'https://lista.mercadolivre.com.br/'
 
 produto_nome = input('Qual produto você deseja? ')
 
-response = requests.get(url_base)
+response = requests.get(url_base + {produto_nome})
 
 site = BeautifulSoup(response.text, 'html.parser')
 
