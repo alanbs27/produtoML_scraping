@@ -1,2 +1,2 @@
 # produtoML_scraping
- Tecnica de webscraping de produtos no site mercado livre
+ ## Tecnicas de webscraping usando BeautifulSoup e Requests, consultando por um produto específico no site do Mercado Livre
