@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 url_base = 'https://lista.mercadolivre.com.br/miband5'
 
-# produto_nome = input('Qual produto você deseja? ')
+produto_nome = input('Qual produto você deseja? ')
 
 response = requests.get(url_base)
 
@@ -24,10 +24,10 @@ for produto in produtos:
     print('preco do produto:', preco.text)
 
 
-    # if (centavos):
-    #     print('preco do produto: R$', real.text + ',' + centavos.text)
-    # else:
-    #     print('preco do produto: R$', real.text)
+    if (centavos):
+         print('preco do produto: R$', real.text + ',' + centavos.text)
+     else:
+         print('preco do produto: R$', real.text)
 
 
     print('\n')
